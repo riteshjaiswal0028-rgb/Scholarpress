@@ -1,0 +1,4 @@
+# v87: home page copy and spacing
+- Copy: hero sentence "Screened, peer-reviewed research, with an open editorial record and certificates anyone can verify."; button "Submit your manuscript"; stats "Articles published / Researchers / Countries"; process heading "How publishing works", line "Three clear steps, with every decision on the record."; steps "Submit your manuscript / Pass peer review / Get published". The submit page title and the SEO meta text are unchanged.
+- Spacing: hero top/bottom padding, grid gap, headline-to-sentence-to-button gaps, and the gaps between search, pillars, figures and process all reduced (about a third to a half). Pillars and figures untouched otherwise.
+- Checks: tsc, vitest, vite build pass. NOT viewed: check / at 360, 390, 768 and desktop; the small hero image (bottom right on phones) must not overlap the button or the sentence.

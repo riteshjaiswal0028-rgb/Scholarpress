@@ -1,0 +1,7 @@
+# v61: second pass against the supplied mockups (presentation and copy only)
+- Home: headline "Share Knowledge. Advance Research."; subtitle reworded to a peer-reviewed platform for academic publishing, with the screening record kept in the sentence; CTAs "Submit Manuscript" and "Explore Research"; new "Our publishing process" 3-step overview (Submit, Screening and peer review, Get published) above the detailed handling steps.
+- Search field: below 640px the submit button is a round icon button (still a submit with aria-label "Search").
+- Explore (below lg): title "All research" with the mockup subtitle (corrections and retractions line kept); subject chips now start with an "All" chip; a "Sort by: Latest" select and the Filters button sit on one row. Same URL params, same filters.
+- Submit step 1: "File requirements" checklist built from the real limits (PDF or .docx, 50 MB, text-based). The mockup's 20 MB and "must be original research" were NOT used: the code allows 50 MB, and originality is a declaration, not a file check.
+- Deliberately NOT built: the 12K+ / 8K+ / 150+ statistics (not real data), photographs (hero building, microscope, DNA, thumbnails: no images exist), bookmarks and the Notifications tab (no data model), "Global Reach / Academic Excellence" claims, Figures and References tabs on articles (no separate data), a hamburger menu.
+- Checks run: tsc 0 errors, vitest 466/466, vite build ok. NOT viewed on a screen.

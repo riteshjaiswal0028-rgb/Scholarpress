@@ -1,0 +1,14 @@
+# v66: phone UI matched to the Scholarly mockups
+- Bottom tabs (below lg, everyone, signed in or out): Home, Explore, My Research, Notifications, Profile. Hidden on /submit and /auth. Moved from the authenticated layout into the root shell.
+- New /notifications page (lists the person's in-app notifications, marks them read on open) with listMyNotifications / markNotificationsRead server functions. routeTree.gen.ts patched by hand; it regenerates on the next dev/build.
+- Android app: native.ts allow-list now includes /, /explore, /article, /paper, /my-research, /notifications, /submit so the tabs work inside the app. Tests updated.
+- Home: kicker, headline, one "Submit Manuscript" button (Explore Research removed), search, four icons, figures card, publishing process. Everything below that, the fee panel and the promo banners were removed from this page. Figures are live (published count, subject count), not made-up totals.
+- Hero line and meta description rewritten ("A peer-reviewed journal for medical innovation..."; "...publishes screened, peer-reviewed research with a transparent editorial record and verifiable author certificates.").
+- Header on phones: logo + hamburger. The menu sheet holds the pages that are no longer in the footer.
+- Footer: Research / Journal / Account link columns removed; seal, identifiers, legal notice and copyright kept.
+- Fonts: headings and wordmark use Playfair Display (Google Fonts link added next to Source Serif 4, which stays for article text); search box is Inter.
+- v67: home hero shows the books photo (public/hero-books.jpg, cropped from the mockup) fading into the page; dark mode keeps the drawn artwork.
+- v68: Submit: header with back arrow and "Submit Manuscript", steps File / Details / Authors / Review / Submit, dashed upload card with cloud icon and "Choose File", uploaded-file row with green check, green "File Requirements" ticks, full-width "Continue →". Explore: "All Research", rows with a tile, date, subject. My Research: always-visible "New Submission", status chips, document tile on cards. Article: tabs Abstract / Full Text / References / Cite / Versions. No article photos or hero image exist in the data, so the rows use a decorative tile.
+- v69: smoother scrolling: header/hero animations and blur layers removed while scrolling, no overscroll bounce, off-screen list rows skip painting, solid sticky submit bar.
+- v70: home matched closer to the mockup: Scholarly book logo, wordmark only on phones, two-line headline at phone size, mockup hero sentence, books at bottom right beside the button, search with filter icon, process labels in title case.
+- v71: home figures are real counts only: published articles, distinct authors, distinct countries in author affiliations (getPublicStats).

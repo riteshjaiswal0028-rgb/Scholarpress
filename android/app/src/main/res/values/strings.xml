@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Scholarly Admin</string>
+    <string name="title_activity_main">Scholarly Admin</string>
+    <string name="package_name">com.scholarpress.admin</string>
+    <string name="custom_url_scheme">com.scholarpress.admin</string>
+</resources>

@@ -1,0 +1,16 @@
+# Premium redesign (2026-11-13)
+- Palette from the certificate: ivory paper, deep forest green, crimson, antique gold (light and dark tokens in src/styles.css).
+- Type: Cormorant Garamond (display), Playfair Display italic (accent words), Inter (interface); all bundled, no Google request for them. Reading text keeps Source Serif 4.
+- Header: frosted glass, tracked-capitals wordmark, desktop nav with gold underline that draws in. Footer: deep-green with crimson band and gold rules.
+- Buttons are pills with a light sweep on hover; search field is a pill with a gold focus ring.
+- Home: animated hero (headline words resolve in, crimson/orange bands slide in and drift, floating seal with rotating ring), scrolling marquee, three pillar cards (lift, gold top line, icon turn), recent articles, numbered steps, deep-green call-to-action band.
+- All motion is CSS and is switched off for visitors who ask for reduced motion.
+- Every other page picks up the new palette, fonts, header, footer, buttons and inputs through the shared tokens. Inner pages were NOT individually redesigned or viewed in a browser.
+- Checks: vite build passes; tsc shows only the 5 existing errors (upload-progress, submit).
+- Inner pages: shared page header (PageTitle) restyled with display type, gold/crimson rule and entrance animation; .eyebrow now gold tracked caps; sign-in heading uses display type.
+- Article title in display type; article rows larger with a gold arrow on hover; sign-in is a framed card with a gold/crimson top line; mobile bottom bar is frosted glass with a gold marker on the current tab.
+- Dashboard: stat tiles are cards with count-up numbers, a gold/crimson side line and a hover lift; section headings end in a gold rule (components/count-up.tsx).
+- My research: gold table header, larger titles, framed empty state. Certificates: each certificate in a rounded card with a gold-framed preview.
+- Submit: round numbered stepper with gold current step (soft pulse) and a gold-to-crimson progress line, larger section headings. Reviews: headings end in a gold rule, rows have hover.
+- Admin: area list has a gold/crimson marker on the current area; sub-tabs use a gold underline. No new animation in admin (kept fast).
+- Accessibility: gold used for small text is now a darker ink (#86661f, 5:1 on ivory; light gold in dark mode and on green bands). Crimson on ivory 10:1, muted text 5.5:1.

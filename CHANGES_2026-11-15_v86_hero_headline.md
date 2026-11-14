@@ -1,0 +1,3 @@
+# v86: home headline typography
+- "Share Knowledge. / Advance Research." now uses `.pm-hero-title` (styles.css, end of file): Source Serif 4 at optical size 60, weight 560, size clamp(2.35rem..4.6rem), line-height 1.04, tracking -0.028em, balanced wrap; line 1 in the text colour, line 2 in the brand colour; a short gold rule above (it replaces the old kicker's rule). The sentence below is `.pm-hero-lede`: 1.125rem, 1.6 line height, 30ch (38ch from 640px), more space above.
+- Checks: tsc clean, vitest pass, vite build OK. NOT viewed: check at 360, 390, 768 and desktop, light and dark; the headline must not touch the hero seal image on the right.

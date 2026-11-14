@@ -1,0 +1,4 @@
+# v62: My research and article pages against the mockups (presentation and copy only)
+- My research: subtitle "Track your submissions and published work." (plus the count), button label "New Submission". The page already had the search pill, status chips, status badges and the next-action link, so layout is unchanged. The mockup's "Updated:" date and the per-card kebab menu are NOT added (the list query does not return updated_at; no card actions exist).
+- Article: when a full-text PDF exists, "Download PDF" is now the primary filled button with a download icon (full width on phones, first in order); "Read full text" becomes the outline button. Without a PDF, "Read full text" stays primary. Keywords sit in a tinted panel headed "Keywords" (heading drawn with CSS, the list keeps its aria-label).
+- Checks run: tsc 0 errors, vitest 466/466, vite build ok. NOT viewed on a screen.
